@@ -17,6 +17,7 @@ app.use(
       "https://task-manager-client-opey.onrender.com/",
     ],
     credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE"],
   })
 );
 // noe cors should always above taskRoutes
