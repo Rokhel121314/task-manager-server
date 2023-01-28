@@ -10,16 +10,17 @@ const app = express();
 // MIDDLEWARE
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(
-  cors({
-    origin: [
-      "http://localhost:3000",
-      "http://task-manager-client-opey.onrender.com/",
-    ],
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"],
-  })
-);
+// app.use(
+//   cors({
+//     origin: [
+//       "http://localhost:3000",
+//       "http://task-manager-client-opey.onrender.com/",
+//     ],
+//     credentials: true,
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//   })
+// );
+app.use(cors());
 // noe cors should always above taskRoutes
 app.use(taskRoutes);
 
