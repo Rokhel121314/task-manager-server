@@ -16,6 +16,7 @@ app.use(
       "http://localhost:3000",
       "https://task-manager-client-opey.onrender.com/",
     ],
+    credentials: true,
   })
 );
 // noe cors should always above taskRoutes
