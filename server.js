@@ -14,7 +14,6 @@ app.use(
   cors({
     origin: [
       "http://localhost:3000",
-      "https://task-manager-client.onrender.com/",
       "https://task-manager-client-opey.onrender.com/",
     ],
   })
